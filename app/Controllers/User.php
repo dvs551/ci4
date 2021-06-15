@@ -42,7 +42,14 @@ class User extends Controller {
                     'required' => 'Please enter birth date.'
                 ]
             ],
-            'email' => 'required|valid_email|is_unique[contacts.email]',
+            'email' => [
+                'rules' => 'required|valid_email|is_unique[contacts.email]',
+                'errors' => [
+                    'required' => 'Please enter Email.',
+                    'valid_email' => 'Please enter Valid Email.',
+                    'is_unique' => 'Email already in use',
+                ]
+            ],
             'password' => 'required',
             'gender' => 'required',
             'address' => 'required'
@@ -108,7 +115,14 @@ class User extends Controller {
                     'required' => 'Please enter birth date.'
                 ]
             ],
-            'email' => 'required|valid_email' . $is_unique,
+            'email' => [
+                'rules' => 'required|valid_email' . $is_unique,
+                'errors' => [
+                    'required' => 'Please enter Email.',
+                    'valid_email' => 'Please enter Valid Email.',
+                    'is_unique' => 'Email already in use',
+                ]
+            ],
             'password' => 'required',
             'gender' => 'required',
             'address' => 'required'
