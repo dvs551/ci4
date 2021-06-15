@@ -20,7 +20,7 @@ class UserModel extends Model {
         $action_button = function($row) {
             return '<a class="btn btn-warning btn-sm edit" href="'.base_url().'/edituser/'.$row['id'].'">Edit</a>
 				&nbsp;
-				<a class="btn btn-danger btn-sm delete" href="'.base_url().'/deleteuser/'.$row['id'].'">Delete</a>
+				<a class="btn btn-danger btn-sm delete" onclick="confirmAction(\'Are you sure you wish to remove this?\', \'/deleteuser/'.$row['id'].'\'); return false;" href="">Delete</a>
 				';
         };
 

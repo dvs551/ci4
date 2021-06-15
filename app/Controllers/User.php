@@ -11,12 +11,15 @@ class User extends Controller {
 
         $model = new UserModel();
         $data['users_detail'] = $model->findAll();
-        return view('list', $data);
+        echo view('header');
+        echo view('user/list', $data);
+        echo view('footer');
     }
 
     public function create() {
-
-        return view('add');
+        echo view('header');
+        echo view('user/add');
+        echo view('footer');
     }
 
     public function userCreate() {
@@ -58,7 +61,8 @@ class User extends Controller {
         $model = new UserModel();
 
         if (!$input) {
-            return redirect()->route('createuser')->withInput()->with('validation', $this->validator);
+            //return redirect()->route('createuser')->withInput()->with('validation', $this->validator);
+            return redirect()->back()->withInput(); 
         } else {
             $data = [
                 'first_name' => $this->request->getVar('first_name'),
@@ -72,7 +76,7 @@ class User extends Controller {
 
             $save = $model->insert($data);
             session()->setFlashdata('message', 'Added Successfully!');
-            session()->setFlashdata('alert-class', 'alert-success');
+            session()->setFlashdata('alert', 'success');
             return redirect()->to(base_url('User'));
         }
     }
@@ -80,7 +84,9 @@ class User extends Controller {
     public function edit($id = null) {
         $model = new UserModel();
         $data['user'] = $model->where('id', $id)->first();
-        return view('edit', $data);
+        echo view('header');
+        echo view('user/edit', $data);
+        echo view('footer');
     }
 
     public function userUpdate() {
@@ -88,7 +94,7 @@ class User extends Controller {
         helper(['form', 'url']);
         $id = $this->request->getVar('id');
         $email = $this->request->getVar('email');
-        
+
         $original_value = $db->query("SELECT email FROM contacts WHERE id = " . $id)->getRow()->email;
         if ($email != $original_value) {
             $is_unique = '|is_unique[contacts.email]';
@@ -131,11 +137,12 @@ class User extends Controller {
         $model = new UserModel();
 
         if (!$input) {
-            //return redirect()->route("edituser/{$id}")->with('validation', $this->validator);
-            $data['user'] = $model->where('id', $id)->first();
+            //return redirect()->route("edituser/{$id}")->withInput()->with('validation', $this->validator);
+            return redirect()->back()->withInput();
+            /*$data['user'] = $model->where('id', $id)->first();
             echo view('edit', $data, [
                 'validation' => $this->validator
-            ]);
+            ]);*/
         } else {
             $data = [
                 'first_name' => $this->request->getVar('first_name'),
@@ -148,7 +155,7 @@ class User extends Controller {
             ];
             $save = $model->update($id, $data);
             session()->setFlashdata('message', 'Updated Successfully!');
-            session()->setFlashdata('alert-class', 'alert-success');
+            session()->setFlashdata('alert', 'success');
             return redirect()->to(base_url('User'));
         }
     }
@@ -158,7 +165,7 @@ class User extends Controller {
         $model = new UserModel();
         $data['user'] = $model->where('id', $id)->delete();
         session()->setFlashdata('message', 'Deleted Successfully!');
-        session()->setFlashdata('alert-class', 'alert-success');
+        session()->setFlashdata('alert', 'success');
         return redirect()->to(base_url('/'));
     }
 
