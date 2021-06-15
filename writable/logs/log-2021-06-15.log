@@ -1,0 +1,124 @@
+CRITICAL - 2021-06-15 00:06:46 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:07:12 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:07:16 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:07:42 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:08:06 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:08:14 --> Call to undefined function App\Controllers\route()
+#0 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#1 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-15 00:08:25 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate('1')
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:10:30 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate()
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:11:15 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate()
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:12:32 -->  route cannot be found while reverse-routing.
+#0 E:\xampp7\htdocs\ci\system\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 E:\xampp7\htdocs\ci\app\Controllers\User.php(111): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate()
+#3 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-15 00:15:08 --> Undefined variable $user
+#0 E:\xampp7\htdocs\ci\app\Views\edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'E:\\xampp7\\htdoc...', 25)
+#1 E:\xampp7\htdocs\ci\system\View\View.php(230): include('E:\\xampp7\\htdoc...')
+#2 E:\xampp7\htdocs\ci\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp7\htdocs\ci\system\Common.php(1271): CodeIgniter\View\View->render('edit', Array, true)
+#4 E:\xampp7\htdocs\ci\app\Controllers\User.php(113): view('edit', Array)
+#5 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate()
+#6 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-15 00:15:22 --> Undefined variable $user
+#0 E:\xampp7\htdocs\ci\app\Views\edit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'E:\\xampp7\\htdoc...', 25)
+#1 E:\xampp7\htdocs\ci\system\View\View.php(230): include('E:\\xampp7\\htdoc...')
+#2 E:\xampp7\htdocs\ci\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp7\htdocs\ci\system\Common.php(1271): CodeIgniter\View\View->render('edit', Array, true)
+#4 E:\xampp7\htdocs\ci\app\Controllers\User.php(113): view('edit', Array)
+#5 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\User->userUpdate()
+#6 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-15 00:38:32 --> Class "App\Models\Ajax_crudModel" not found
+#0 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\Ajax_crud->fetch_all()
+#1 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax_crud))
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-15 00:38:39 --> Class "App\Models\Ajax_crudModel" not found
+#0 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\Ajax_crud->fetch_all()
+#1 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax_crud))
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-15 00:42:36 --> Class "monken\TablesIgniter" not found
+#0 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\Ajax_crud->fetch_all()
+#1 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax_crud))
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-15 00:42:45 --> Class "monken\TablesIgniter" not found
+#0 E:\xampp7\htdocs\ci\system\CodeIgniter.php(928): App\Controllers\Ajax_crud->fetch_all()
+#1 E:\xampp7\htdocs\ci\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax_crud))
+#2 E:\xampp7\htdocs\ci\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp7\htdocs\ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
