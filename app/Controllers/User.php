@@ -22,7 +22,7 @@ class User extends Controller {
     public function userCreate() {
 
         helper(['form', 'url']);
-
+        $email = $this->request->getVar('email');
         $input = $this->validate([
             'first_name' => [
                 'rules' => 'required|min_length[3]',
@@ -42,7 +42,7 @@ class User extends Controller {
                     'required' => 'Please enter birth date.'
                 ]
             ],
-            'email' => 'required|valid_email',
+            'email' => 'required|valid_email|is_unique[contacts.email]',
             'password' => 'required',
             'gender' => 'required',
             'address' => 'required'
@@ -77,8 +77,17 @@ class User extends Controller {
     }
 
     public function userUpdate() {
-
+        $db = \Config\Database::connect();
         helper(['form', 'url']);
+        $id = $this->request->getVar('id');
+        $email = $this->request->getVar('email');
+        
+        $original_value = $db->query("SELECT email FROM contacts WHERE id = " . $id)->getRow()->email;
+        if ($email != $original_value) {
+            $is_unique = '|is_unique[contacts.email]';
+        } else {
+            $is_unique = '';
+        }
 
         $input = $this->validate([
             'first_name' => [
@@ -99,14 +108,14 @@ class User extends Controller {
                     'required' => 'Please enter birth date.'
                 ]
             ],
-            'email' => 'required|valid_email',
+            'email' => 'required|valid_email' . $is_unique,
             'password' => 'required',
             'gender' => 'required',
             'address' => 'required'
         ]);
 
         $model = new UserModel();
-        $id = $this->request->getVar('id');
+
         if (!$input) {
             //return redirect()->route("edituser/{$id}")->with('validation', $this->validator);
             $data['user'] = $model->where('id', $id)->first();
